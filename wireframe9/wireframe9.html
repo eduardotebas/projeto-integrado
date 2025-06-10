@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wireframe9.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI"></script>
+    <script src="wireframe9.js"></script>
+    <title>Wireframe 9</title>
+</head>
+
+<body>
+
+   <nav class="cabecalho">
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo" width="40px" />
+        <h3>♻️ Nome empresa</h3>
+    </div>
+
+    <div class="menu-central">
+        <a href="../loc-tempo-real/telaprincipal.html">Tela Principal</a>
+        <a href="../wireframe8/wireframe8.html">Notícias</a>
+        <a href="../wireframe10/wireframe10.html">Estatísticas</a>
+        <a href="../wireframe2/wireframe2.html">Como Separar?</a>
+        <a href="../investidores/investidores.html">Nossos Investidores</a>
+        <a href="#">Meu Perfil</a>
+    </div>
+
+    <div class="acoes">
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar..." />
+            <img src="imagens/noun-search-5079148.svg" alt="Buscar" width="20px" />
+        </div>
+        <button class="login-btn" onclick="redirecionar()">Login</button>
+    </div>
+</nav>
+    <section>
+        <div class="boasvindas">
+            <h1>BEM VINDO, COOPERADOR</h1>
+            <h4>Pontos de descarga próximos</h4>
+        </div>
+        <div class="temporeal">
+            <h2>Sua localização</h2>
+            <div class="map-frame">
+                <div id="map"></div>
+            </div>
+            <div class="histórico">
+                <button class="btn-hist" onclick="historico()">Veja seu histórico de ações</button>
+            </div>
+        </div>
+        <div class="filho2">
+            <h1>Colaboradores próximos</h1>
+            <h4>Conheça os pontos próximas</h5>
+        </div>
+        <div class="paidospontoscoleta">
+            <div class="sugestoes">
+                <div>
+                    <p>Sugestão 1</p>
+                    <img src="imagens/220.jpg" alt="" width="450px">
+                </div>
+                <p style="padding-top: 5px;"><img src="imagens/local-pin-svgrepo-com.svg" alt="" width="20px"> Endereço:
+                    Rua ABC 123</p>
+            </div>
+            <div class="sugestoes">
+                <div>
+                    <p>Sugestão 2</p>
+                    <img src="imagens/col4.jpg" alt="" width="450px">
+                </div>
+                <p style="padding-top: 5px;"> <img src="imagens/local-pin-svgrepo-com.svg" alt="" width="20px">
+                    Endereço: Rua DEF 456</p>
+            </div>
+            <div class="sugestoes">
+                <div>
+                    <p>Sugestão 3</p>
+                    <img src="imagens/ECOPONTO.jpg" alt="" width="450px" height="340px">
+                </div>
+                <p style="padding-top: 5px;"><img src="imagens/local-pin-svgrepo-com.svg" alt="" width="20px">
+                    Endereço:Rua GHI 789</p>
+            </div>
+        </div>
+
+        <div class="Detalhes">
+            <label>
+                <h3>📍 Localização do depósito</h3><br>
+                <input class="preenchimento" type="text" placeholder="Digite a localização" />
+            </label>
+
+            <label>
+                <h3>🧮 Quantidade de resíduos</h3><br>
+                <input class="preenchimento" type="text" placeholder="Ex: 5 kg" />
+            </label>
+
+            <div class="checkboxes">
+                <div>
+                    <h3>🧺 Tipos de materiais:</h3>
+                </div>
+                <label><input class="checkbox-grande" type="checkbox" name="papel" /> Papel</label>
+                <label><input type="checkbox" name="plastico" /> Plástico</label>
+                <label><input type="checkbox" name="vidro" /> Vidro</label>
+                <label><input type="checkbox" name="eletronicos" /> Eletrônicos</label>
+                <label><input type="checkbox" name="aluminio" value="aluminio">Aluminio</label>
+                <label><input type="checkbox" name="material" value="oleo">Óleo</label>
+            </div>
+            <br>
+            <button class="envioMateriais">Registrar materiais</button>
+        </div>
+
+        <footer class="rodape">
+            <p>Fortes © 2025 – Todos os direitos reservados</p>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="wireframe9.js"></script>
+
+</body>
+
+</html>

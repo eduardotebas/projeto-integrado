@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wireframe5.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="wireframe5.js"></script>
+    <title>Wireframe 5</title>
+</head>
+
+<body>
+    <header class="topo">
+        <div class="navbar">
+            <div class="profile">
+                <img src="https://i.pravatar.cc/40" alt="Foto do Usuário">
+                <span class="profile-name">
+                    <h3><b>Eduardo Tebas</b></h3>
+                </span>
+            </div>
+             <div class="menu-central">
+            <a href="../loc-tempo-real/telaprincipal.html">Tela Principal</a>
+            <a href="../wireframe8/wireframe8.html">Notícias</a>
+            <a href="../wireframe10/wireframe10.html">Estatísticas</a>
+            <a href="../wireframe2/wireframe2.html">Como Separar?</a>
+            <a href="../investidores/investidores.html">Nossos Investidores</a>
+            <a href="#">Meu perfil</a>
+        </div>
+
+        <div class="acoes">
+            <div class="pesquisa">
+                <input type="text" placeholder="Pesquisar..." />
+                <img src="imagens/noun-search-5079148.svg" alt="Buscar" width="20px" />
+            </div>
+            <button class="login-btn" onclick="redirecionar()">Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="containerPai">
+            <div class="filho1">
+                <h2>Reciclador, registre sua Coleta</h2>
+            </div>
+        </div>
+
+        <div class="containerPai2">
+            <div>
+                <h2>Detalhes da coleta</h2>
+            </div>
+            <div class="Detalhes">
+                <label>
+                    <h3>📍 Localização do reciclado(Ponto de Coleta)</h3>
+                    <input type="text" placeholder="Digite a localização" />
+                </label>
+
+                <label>
+                    <h3>🧮 Quantidade de resíduos</h3>
+                    <input type="text" placeholder="Ex: 5 kg" />
+                </label>
+
+                <div class="checkboxes">
+                    <h3>🧺 Tipos de materiais:</h3>
+                    <label><input type="checkbox" name="papel" /> Papel</label>
+                    <label><input type="checkbox" name="plastico" /> Plástico</label>
+                    <label><input type="checkbox" name="vidro" /> Vidro</label>
+                    <label><input type="checkbox" name="eletronicos" /> Eletrônicos</label>
+                    <label><input type="checkbox" name="aluminio" value="aluminio">Aluminio</label>
+                     <label><input type="checkbox" name="material" value="oleo">Óleo</label>
+                </div>
+                <br>
+                <button>Registrar Coleta</button>
+            </div>
+        </div>
+
+        <section class="estatisticas">
+            <h2>📊 Estatísticas</h2>
+            <p>Você reciclou 12 kg este mês! Continue assim 🚀</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Fortes © 2025 – Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

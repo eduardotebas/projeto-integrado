@@ -1,0 +1,287 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html,
+  body {
+      height: 100%;
+  }
+
+  main {
+    border-radius: 16px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .cabecalho {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      flex-wrap: wrap;
+  }
+
+  .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .logo h3 {
+      font-size: 24px;
+      margin: 0;
+  }
+
+  .menu-central {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex: 1;
+  }
+
+  .menu-central a {
+      text-decoration: none;
+      color: #1d7508;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+  }
+
+  .menu-central a:hover {
+      color: #1d35ea;
+  }
+
+  .acoes {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  }
+
+  .pesquisa {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background-color: #eee;
+      padding: 4px 8px;
+      border-radius: 12px;
+  }
+
+  .pesquisa input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+  }
+
+  .login-btn {
+      background-color: #1d7508;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 12px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+
+  .login-btn:hover {
+      background-color: #1d35ea;
+  }
+
+  body {
+      min-height: 100vh;
+      padding: 20px;
+      background-image: url(imagens/lighter_blurred_image.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  main {
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #2e7d32;
+  }
+
+  section {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+  }
+
+  section h2 {
+      margin-bottom: 25px;
+      color: #2e7d32;
+      font-size: 1.8rem;
+      border-left: 6px solid #66bb6a;
+      padding-left: 12px;
+  }
+
+  .itens-container,
+  .noticias-grid,
+  .feedback-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  }
+
+  .item,
+  .noticia,
+  .feedback-item {
+      background-color: #f4fdf6;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.3s;
+  }
+
+  .item:hover,
+  .noticia:hover,
+  .feedback-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(0, 100, 0, 0.15);
+  }
+
+  .item img {
+      border-radius: 8px;
+      margin-bottom: 12px;
+  }
+
+  .item h3,
+  .noticia h3 {
+      color: #1b5e20;
+      margin-bottom: 8px;
+  }
+
+  .item p,
+  .noticia p {
+      font-size: 0.95rem;
+      color: #333;
+  }
+
+  .feedback-item {
+      font-style: italic;
+      background-color: #51e65d;
+      border-left: 5px solid #66bb6a;
+  }
+
+  @media (max-width: 600px) {
+      h1 {
+          font-size: 1.8rem;
+      }
+
+      section h2 {
+          font-size: 1.4rem;
+      }
+  }
+
+  /* Notícia em destaque */
+  .noticia-destaque .destaque {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+
+  .destaque img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .destaque-texto h3 {
+      color: #1b5e20;
+      margin-bottom: 8px;
+  }
+
+  .destaque-texto p {
+      font-size: 1rem;
+      color: #333;
+  }
+
+  /* Botão Curtir */
+  .curtir {
+      background-color: #66bb6a;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+  }
+
+  .curtir:hover {
+      background-color: #388e3c;
+  }
+
+  /* Histórias Inspiradoras */
+  .historias-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  }
+
+  .historia {
+      background-color: #e8f5e9;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .historia h3 {
+      color: #2e7d32;
+      margin-bottom: 8px;
+  }
+
+  .historia p {
+      font-size: 0.95rem;
+      color: #333;
+  }
+
+  /* Rodapé fixo no fundo */
+  .rodape {
+      text-align: center;
+      padding: 16px;
+      background-color: rgba(255, 255, 255, 0.95);
+      font-weight: bold;
+      color: #333;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+      bottom: 0;
+      width: 100%;
+      z-index: 100;
+  }
+
+  /* Ajuste para evitar que o rodapé cubra o conteúdo */
+  body {
+      padding-bottom: 80px;
+      /* Espaço para o rodapé */
+  }
+
+
+  .rodape {
+      text-align: center;
+      padding: 16px;
+      background-color: rgba(255, 255, 255, 0.9);
+      font-weight: bold;
+      color: #333;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+  }

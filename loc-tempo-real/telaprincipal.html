@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortes - Localização</title>
+    <link rel="stylesheet" href="telaprincipal.css">
+    <script src="telaprincipal.js"></script>
+</head>
+
+<body>
+
+    <nav class="cabecalho">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo" width="40px" />
+            <h3>♻️ Fortes</h3>
+        </div>
+
+        <div class="menu-central">
+            <a href="../loc-tempo-real/telaprincipal.html">Tela Principal</a>
+            <a href="../wireframe8/wireframe8.html">Notícias</a>
+            <a href="../wireframe10/wireframe10.html">Estatísticas</a>
+            <a href="../wireframe2/wireframe2.html">Como Separar?</a>
+            <a href="../investidores/investidores.html">Nossos Investidores</a>
+            <a href="#">Meu Perfil</a>
+        </div>
+
+        <div class="acoes">
+            <div class="pesquisa">
+                <input type="text" placeholder="Pesquisar..." />
+                <img src="imagens/noun-search-5079148.svg" alt="Buscar" width="20px" />
+            </div>
+            <button class="login-btn" onclick="redirecionar()">Login</button>
+        </div>
+    </nav>
+
+    <main class="conteudo">
+        <!-- BARRA LATERAL ESQUERDA -->
+        <aside class="barra-lateral esquerda">
+            <section class="info-lateral">
+                <h4>Impacto até agora</h4>
+                <p>♻️ 253 kg reciclados</p>
+                <p>👥 812 usuários ativos</p>
+            </section>
+
+            <section class="curiosidade">
+                <h4>Sabia que?</h4>
+                <p>🌱 1 tonelada de papel reciclado salva 20 árvores!</p>
+            </section>
+        </aside>
+
+        <!-- BARRA LATERAL DIREITA -->
+        <aside class="barra-lateral direita">
+            <section class="feedback-lateral">
+                <h4>O que dizem nossos usuários</h4>
+                <blockquote>"Adorei a praticidade do mapa!"</blockquote>
+                <blockquote>"Encontrei um ponto de coleta a 2 quadras!"</blockquote>
+            </section>
+
+            <section class="eventos-lateral">
+                <h4>Próximos eventos</h4>
+                <ul>
+                    <li>🗓️ 18/06 - Mutirão de reciclagem</li>
+                    <li>🗓️ 25/06 - Feira Verde, Jardim Camburi</li>
+                </ul>
+            </section>
+        </aside>
+
+        <section class="missao">
+            <h2>Conectando pessoas a pontos de coleta</h2>
+            <p>Nosso objetivo é facilitar o descarte correto de materiais, preservando o meio ambiente com praticidade.
+                <br> Veja abaixo sua localização com os pontos de coleta mais próximos.
+            </p>
+        </section>
+
+        <div class="mapa">
+            <!-- Google Maps incorporado (pode substituir pelo link da sua localização real se quiser) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.017451094915!2d-40.33649122469054!3d-20.3155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb819bf2a10d27d%3A0x3e23906a6cdca0b6!2sVit%C3%B3ria%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1717587458274!5m2!1spt-BR!2sbr"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+
+    <section class="cards-funcionalidades">
+        <div class="card">
+            <h3>Veja como separar seus resíduos</h3>
+            <p>Dicas práticas para o dia a dia.</p>
+            <a href="../wireframe2/wireframe2.html">Aprender ➜</a>
+        </div>
+
+        <div class="card">
+            <h3>Estatísticas de coleta</h3>
+            <p>Veja o impacto ambiental positivo que causamos juntos.</p>
+            <a href="../wireframe10/wireframe10.html">Ver estatísticas ➜</a>
+        </div>
+
+        <div class="card">
+            <h3>Notícias ambientais</h3>
+            <p>Fique por dentro das novidades sobre reciclagem.</p>
+            <a href="../wireframe8/wireframe8.html">Ver notícias ➜</a>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>FORTES - 2025</p>
+    </footer>
+
+
+</body>
+
+</html>

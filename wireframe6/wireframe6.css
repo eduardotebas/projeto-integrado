@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #e6f5ea, #c2ecd1);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(85, 82, 82, 0.194), #ffff);
+}
+
+.tudo {
+    background-image: url(imagens/lighter_blurred_image.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    background: #ffffffcc;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Header - Cadastro e Imagem */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.cadastro {
+    flex: 1;
+    min-width: 250px;
+}
+
+.cadastro h2 {
+    font-size: 20px;
+    color: #006633;
+    margin-bottom: 10px;
+}
+
+.cadastro input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #66cc99;
+    margin-bottom: 12px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.cadastro button {
+    background-color: #009966;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cadastro button:hover {
+    background-color: #007f55;
+}
+
+/* Imagem */
+.imagem {
+    width: 350px;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Linha divisória */
+.middle-line {
+    height: 2px;
+    background-color: #b5e0c8;
+    margin: 40px 0;
+    border: none;
+}
+
+/* Detalhes do Evento */
+.detalhes-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.detalhes-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.detalhes-left h1 {
+    font-size: 26px;
+    color: #004d26;
+    margin-bottom: 8px;
+}
+
+.detalhes-left p {
+    color: #006644;
+    font-size: 15px;
+}
+
+/* Formulário */
+.form-right {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #006633;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #66cc99;
+    outline: none;
+    background-color: #f5fdf7;
+}
+
+.form-right button {
+    background-color: #009966;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-right button:hover {
+    background-color: #007f55;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Campo com ícone */
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon span {
+    position: absolute;
+    left: 10px;
+    color: #009966;
+}
+
+.input-icon input {
+    padding-left: 35px;
+}
+
+/* Animação suave */
+button,
+input {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+input:focus {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 12px rgba(0, 128, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .top-section,
+    .detalhes-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-right {
+        width: 100%;
+        max-width: none;
+    }
+}

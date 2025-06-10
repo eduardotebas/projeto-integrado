@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(assets/nexatext-trial-light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(assets/nexatext-trial-regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(assets/nexatext-trial-bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+section {
+    background-image: url(imagens/lighter_blurred_image.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(to bottom, 
+  rgba(0, 128, 0, 0), 
+  rgba(0, 0, 0, 0.275), 
+  rgba(0, 128, 0, 0)
+);*/
+}
+
+h1 {
+    font-size: 35px;
+}
+
+button {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1d7508;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+body {
+    font-family: "Nexa";
+}
+
+input {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: "Nexa";
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #1d7508;
+    box-shadow: 0 0 0 2px rgba(29, 117, 8, 0.2);
+    transform: translateY(-5px);
+    transition: all .3s ease;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(85, 82, 82, 0.194), #fff);
+    padding: 10px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.menu-central {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex: 1;
+}
+
+.menu-central a {
+    text-decoration: none;
+    color: #1d7508;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-central a:hover {
+    color: #1d35ea;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #e0f2f1;
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+
+.pesquisa input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.login-btn {
+    background-color: #1d7508;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1d35ea;
+}
+
+section {
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.apresentacaoMateriais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    gap: 16px;
+}
+
+.containerTiposMateriais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 16px;
+    margin: 0 30.2%;
+}
+
+.containerTiposMateriais:hover> :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+
+.materiais {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 96px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 4px 3px 15px -5px;
+    transition: .35s;
+    cursor: pointer;
+}
+
+
+
+.progressoReciclagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    gap: 16px;
+
+    img {
+        border: none;
+        outline: none;
+    }
+}
+
+.conquistasAtualizadas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.itensConquista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.imagemBordada {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagemBordada img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #2e7d32;
+    margin-bottom: 10px;
+}
+
+.novasAcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.definicaoAcao,
+.descricaoAcao {
+    flex: 1;
+    min-width: 280px;
+}
+
+.definicaoAcao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 32px;
+    gap: 8px;
+}
+
+.descricaoAcao {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 20%;
+}
+
+.descricaoAcao input,
+.descricaoAcao textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.descricaoAcao button {
+    background-color: #1b5e20;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.descricaoAcao button:hover {
+    background-color: #388e3c;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}

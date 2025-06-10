@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos de Coleta</title>
+  <link rel="stylesheet" href="wireframe 3-4.css">
+  <script src="wireframe3-4.js"></script>
+</head>
+
+<body>
+  <nav class="cabecalho">
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo" width="40px" />
+        <h3>♻️ Nome empresa</h3>
+    </div>
+
+    <div class="menu-central">
+        <a href="../loc-tempo-real/telaprincipal.html">Tela Principal</a>
+        <a href="../wireframe8/wireframe8.html">Notícias</a>
+        <a href="../wireframe10/wireframe10.html">Estatísticas</a>
+        <a href="../wireframe2/wireframe2.html">Como Separar?</a>
+        <a href="../investidores/investidores.html">Nossos Investidores</a>
+        <a href="#">Meu Perfil</a>
+    </div>
+
+    <div class="acoes">
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar..." />
+            <img src="imagens/noun-search-5079148.svg" alt="Buscar" width="20px" />
+        </div>
+        <button class="login-btn" onclick="redirecionar()">Login</button>
+    </div>
+</nav>
+
+  <div class="paiTodos">
+    <header class="boasvindas">
+      <h1>BEM-VINDO, COLETOR</h1>
+      <button class="btn">Selecione seu material desejado</button>
+    </header>
+
+    <div class="mapa" style="width: 550px;">
+      <!-- Google Maps incorporado (pode substituir pelo link da sua localização real se quiser) -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.017451094915!2d-40.33649122469054!3d-20.3155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb819bf2a10d27d%3A0x3e23906a6cdca0b6!2sVit%C3%B3ria%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1717587458274!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+
+    <section class="pontos">
+      <h2>PONTOS DE COLETA</h2>
+      <p>Selecione qual está mais perto de você.</p>
+      <div class="ponto-lista">
+        <div class="ponto">
+          <img src="https://img.icons8.com/ios-filled/50/marker.png" alt="ícone">
+          <p>ponto de coleta 1</p>
+        </div>
+        <div class="ponto">
+          <img src="https://img.icons8.com/ios-filled/50/marker.png" alt="ícone">
+          <p>ponto de coleta 2</p>
+        </div>
+        <div class="ponto">
+          <img src="https://img.icons8.com/ios-filled/50/marker.png" alt="ícone">
+          <p>ponto de coleta 3</p>
+        </div>
+        <div class="ponto">
+          <img src="https://img.icons8.com/ios-filled/50/marker.png" alt="ícone">
+          <p>ponto de coleta 4</p>
+        </div>
+      </div>
+    </section>
+
+    <h2 style="display: flex; justify-content: center;">Adicione um novo ponto de coleta</h2>
+    <section class="adicionar">
+      <select id="bairro">
+        <option value="">Selecione o bairro</option>
+        <option>Mata da Praia</option>
+        <option>Jardim Camburi</option>
+        <option>Praia do Canto</option>
+        <option>Centro</option>
+      </select>
+
+      <select id="tipo">
+        <option value="">Selecione o tipo de material</option>
+        <option>Renovável</option>
+        <option>Não renovável</option>
+      </select>
+
+      <select id="materiais">
+        <option value="">Selecione os materiais aceitos</option>
+        <option>Todos</option>
+        <option>Outro</option>
+      </select>
+
+      <button class="botao-envio"  onclick="enviar()">Enviar sugestão</button>
+        <p id="mensagem" style="text-align:center; color: green; font-weight: bold;"></p>
+    </section>
+    <footer class="rodape">
+      <p>Fortes © 2025 – Todos os direitos reservados</p>
+    </footer>
+  </div>
+</body>
+
+</html>

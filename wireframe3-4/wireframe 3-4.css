@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.paiTodos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-image: url(imagens/lighter_blurred_image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(85, 82, 82, 0.194), #fff);
+  padding: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.menu-central {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex: 1;
+}
+
+.menu-central a {
+  text-decoration: none;
+  color: #1d7508;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu-central a:hover {
+  color: #1d35ea;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.pesquisa input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: #1d7508;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #1d35ea;
+}
+
+
+.boasvindas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+input {
+  padding: 4px 10px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+}
+
+button {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1d7508;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.mapa {
+  width: 100%;
+  max-width: 600px;
+  /* Limita largura máxima */
+  height: auto;
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pontos {
+  padding: 30px;
+  text-align: center;
+}
+
+.pontos h2 {
+  margin-bottom: 10px;
+}
+
+.ponto-lista {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.ponto {
+  text-align: center;
+}
+
+.ponto img {
+  width: 60px;
+  height: 60px;
+}
+
+.adicionar {
+  /* background-color: #f5f5f5;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  gap: 8px;
+  padding-bottom: 10px;
+}
+
+.adicionar select {
+  padding: 8px;
+  width: 250px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+#mensagem {
+  width: 300px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .menu-central {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .acoes {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .pesquisa {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .login-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .boasvindas h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .mapa iframe {
+    height: 300px;
+  }
+
+  .ponto-lista {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .adicionar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .adicionar select,
+  .botao-envio {
+    width: 90%;
+  }
+
+  #mensagem {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo h3 {
+    font-size: 18px;
+  }
+
+  .menu-central a {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .boasvindas button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .pontos h2 {
+    font-size: 20px;
+  }
+}

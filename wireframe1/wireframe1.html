@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="wireframe1.css">
+    <script src="wireframe1.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="profile">
+                <img src="https://i.pravatar.cc/40" alt="Foto do Usuário">
+                <span class="profile-name">
+                    <h3><b>Eduardo Tebas</b></h3>
+                </span>
+            </div>
+            <div class="menu-central">
+                <a href="../loc-tempo-real/telaprincipal.html">Tela Principal</a>
+                <a href="../wireframe8/wireframe8.html">Notícias</a>
+                <a href="../wireframe10/wireframe10.html">Estatísticas</a>
+                <a href="../wireframe2/wireframe2.html">Como Separar?</a>
+                <a href="../investidores/investidores.html">Nossos Investidores</a>
+                <a href="#">Meu Perfil</a>
+            </div>
+
+            <div class="acoes">
+                <div class="pesquisa">
+                    <input type="text" placeholder="Pesquisar..." />
+                    <img src="imagens/noun-search-5079148.svg" alt="Buscar" width="20px" />
+                </div>
+                <button class="login-btn" onclick="redirecionar()">Login</button>
+            </div>
+    </header>
+
+    <div class="residue-collector">
+        <div>
+            <h1>Resíduos próximos a você</h1>
+        </div>
+        <button onclick="direcionar()">Ver Pontos de Coleta
+            próximos</button><!--Pode ir para a tela da localização dos pontos de coleta-->
+    </div>
+    <main>
+        <section class="available-section">
+            <h2>Recicláveis Disponíveis</h2>
+            <button id="coletar-btn" onclick="coletar()">Coletar Agora</button>
+
+            <div class="materials">
+                <div class="material">
+                    <div class="material-icon"></div>
+                    <h3>Garrafa plástica</h3>
+                    <p>24 itens disponíveis</p>
+                </div>
+                <div class="material">
+                    <div class="material-icon"></div>
+                    <h3>Caixas de papelão</h3>
+                    <p>12 itens disponíveis</p>
+                </div>
+            </div>
+            <div id="mensagem-endereco" style="margin-top: 20px;"></div>
+        </section>
+
+        <section class="statistics-section">
+            <h2>Estatísticas de coleta</h2>
+            <div class="stats">
+                <div>
+                    <p>Total de Coletas</p>
+                    <h3>56</h3>
+                    <span>+12 da semana passada</span>
+                </div>
+                <div>
+                    <p>Renda gerada</p>
+                    <h3>$120</h3>
+                    <span>+$40 da semana passada</span>
+                </div>
+            </div>
+            <div class="graph">
+                <h3>Tendências de coleta semanal</h3>
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar higher"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="notify-section">
+            <h2>Notifique-me</h2>
+            <p>Preencha o formulário para receber notificações sobre novos materiais recicláveis</p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Seu endereço de email" required>
+                <small>Não o notificaremos por e-mail</small>
+
+                <label for="telefone">Número de telefone</label>
+                <input type="tel" id="telefone" placeholder="Seu número de telefone" required>
+                <p style="display: flex; justify-content: center;">Itens que gostaria de receber</p>
+                <div class="materiais">
+                    <label>
+                        <input type="checkbox" name="material" value="papel">
+                        Papel
+                    </label>
+                    <label>
+                        <input type="checkbox" name="material" value="plastico">
+                        Plastico
+                    </label>
+                    <label>
+                        <input type="checkbox" name="material" value="oleo">
+                        Óleo
+                    </label>
+                </div>
+                <div class="materiais">
+                    <label>
+                        <input type="checkbox" name="material" value="vidro">
+                        Vidro
+                    </label>
+                    <label>
+                        <input type="checkbox" name="material" value="eletronico">
+                        Eletrônico
+                    </label>
+                    <label>
+                        <input type="checkbox" name="material" value="aluminio">
+                        Aluminio
+                    </label>
+                </div><br>
+                <small>Iremos notificá-lo via SMS</small>
+
+                <button type="submit" onclick="formulario()">Inscrever-se</button>
+            </form>
+        </section>
+
+        <footer class="rodape">
+            <p>Fortes © 2025 – Todos os direitos reservados</p>
+        </footer>
+    </main>
+</body>
+
+</html>

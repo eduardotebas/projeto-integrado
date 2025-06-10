@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.85);
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/lighter_blurred_image.jpeg);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 31px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+input {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: "";
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #1d7508;
+    box-shadow: 0 0 0 2px rgba(29, 117, 8, 0.2);
+    transform: translateY(-5px);
+    transition: all .3s ease;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(85, 82, 82, 0.194), #fff);
+    padding: 10px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-central {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex: 1;
+}
+
+.menu-central a {
+    text-decoration: none;
+    color: #1d7508;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-central a:hover {
+    color: #1d35ea;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #eee;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.pesquisa input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #1d7508;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1d35ea;
+}
+
+.missao {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    color: #033d00;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.missao h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.missao p {
+    font-size: 18px;
+}
+
+
+.conteudo {
+    flex: 1;
+    text-align: center;
+    padding: 40px 20px;
+    color: #033d00;
+}
+
+.conteudo h1 {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mapa {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cards-funcionalidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 40px auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #1d7508;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1d35ea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+
+.barra-lateral {
+    position: fixed;
+    top: 120px;
+    width: 230px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.barra-lateral.esquerda {
+    margin-top: 200px;
+    left: 200px;
+}
+
+.barra-lateral.direita {
+    margin-top: 200px;
+    right: 200px;
+}
+
+.barra-lateral h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1d7508;
+}
+
+.barra-lateral p,
+.barra-lateral li,
+.barra-lateral blockquote {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.barra-lateral blockquote {
+    font-style: italic;
+    border-left: 3px solid #1d7508;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 1640px) {
+    .barra-lateral {
+        display: none;
+        /* Esconde as laterais em telas menores */
+    }
+}
+
+
+.rodape {
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
