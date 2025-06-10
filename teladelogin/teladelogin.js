@@ -17,11 +17,11 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     let usuario = document.getElementById("usuario").value;
     let senha = document.getElementById("senha").value;
     // Usuário e senha pré-definidos (apenas exemplo)
-    if (usuario === "cooperativa" && senha === "123456") {
+    if (usuario === "cooperativas@fortes.com.br" && senha === "123456") {
         alert("Login realizado com sucesso!");
         // Aqui poderia redirecionar para outra página, ex:
         window.location.href = "../wireframe9/wireframe9.html";
-    } else if (usuario === "reciclador" && senha === "123456") {
+    } else if (usuario === "admin@fortes.com.br" && senha === "123456") {
         window.alert("Login realizado com sucesso!")
         window.location.href = "../wireframe1/wireframe1.html"
     } else {
