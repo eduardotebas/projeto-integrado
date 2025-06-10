@@ -16,7 +16,6 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     event.preventDefault(); // Evita o envio padrão do formulário
     let usuario = document.getElementById("usuario").value;
     let senha = document.getElementById("senha").value;
-    // Usuário e senha pré-definidos (apenas exemplo)
     if (usuario === "cooperativas@fortes.com.br" && senha === "123456") {
         alert("Login realizado com sucesso!");
         // Aqui poderia redirecionar para outra página, ex:
