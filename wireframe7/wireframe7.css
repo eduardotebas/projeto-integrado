@@ -12,6 +12,82 @@ header.welcome-section {
     background-color: #f0f0f0;
 }
 
+cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(85, 82, 82, 0.194), #fff);
+    padding: 10px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-central {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex: 1;
+}
+
+.menu-central a {
+    text-decoration: none;
+    color: #1d7508;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-central a:hover {
+    color: #1d35ea;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #eee;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.pesquisa input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #1d7508;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1d35ea;
+}
+
 .welcome-text {
     max-width: 50%;
 }
