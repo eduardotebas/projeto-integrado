@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Coleção</title>
     <link rel="stylesheet" href="wireframe7.css">
+    <script src="wireframe7.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
 </head>
+
 <body>
-    
+
     <nav class="cabecalho">
         <div class="logo">
             <img src="imagens/logo.png" alt="Logo" width="40px" />
@@ -31,47 +37,97 @@
             <button class="login-btn" onclick="redirecionar()">Login</button>
         </div>
     </nav>
-    
-    <header class="welcome-section">
+    <main>
         <div class="welcome-text">
-            <h1>Bem-vindo ao gerenciamento de coleção de Residuos</h1>
-            <p>Permite adicionar e gerenciar eventos.</p>
-            <button>Botão</button>
+            <h1>Histórico de Ações</h1>
+            <p>Acompanhe seus descartes, com dados financeiros e operacionais.</p>
         </div>
-        <div class="welcome-image"></div>
-    </header>
 
-    <section class="updates-section">
-        <h2>Atualizações recentes</h2>
-        <div class="updates">
-            <div class="update-box">Última atualização 1</div>
-            <div class="update-box">Última atualização 2</div>
-        </div>
-    </section>
-
-    <section class="collections-section">
-        <h3>Coleções recentes</h3>
-        <div class="collections">
-            <div class="collection-box">Coleção 1</div>
-            <div class="add-event">
-                <div class="add-icon">+</div>
-                <p>Adicionar novo evento de coleção</p>
+        <section class="updates-section">
+            <h2>Descarte de Resíduos</h2>
+            <div class="updates">
+                <div class="update-box">
+                    <p><strong>Data:</strong> 05/06/2025</p>
+                    <p><strong>Local:</strong> Ponto de Coleta - Jardim Camburi</p>
+                    <p><strong>Lucro:</strong> R$ 120,00</p>
+                    <p><strong>Catador:</strong> João da Silva</p>
+                </div>
+                <div class="update-box">
+                    <p><strong>Data:</strong> 03/06/2025</p>
+                    <p><strong>Local:</strong> Ponto de Coleta - Centro</p>
+                    <p><strong>Lucro:</strong> R$ 95,00</p>
+                    <p><strong>Catador:</strong> Maria dos Santos</p>
+                </div>
             </div>
+        </section>
+
+        <section class="collections-section">
+            <h3>Resumo Financeiro</h3>
+            <div class="collections">
+                <div class="collection-box">
+                    <p><strong>Total de Lucro:</strong><br>R$ 10.500,00</p>
+                </div>
+                <div class="collection-box">
+                    <p><strong>Descartes no mês:</strong><br>14 eventos</p>
+                </div>
+            </div>
+        </section>
+        <div class="paisecoes">
+            <section class="geo-section">
+                <h2>Locais de Maior Demanda</h2>
+                <div class="geo-data">
+                    <div class="geo-box">
+                        <p><strong>Centro:</strong> 45 descartes/mês</p>
+                        <p><strong>Último saque:</strong> 10/06/2025</p>
+                    </div>
+                    <div class="geo-box">
+                        <p><strong>Jardim Camburi:</strong> 39 descartes/mês</p>
+                        <p><strong>Último saque:</strong> 09/06/2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TENDÊNCIAS E PICOS -->
+            <section class="tendencias-section">
+                <h2>Tendências de Descarte</h2>
+                <div class="tendencias-data">
+                    <div class="tendencia-box">
+                        <p><strong>Pico semanal:</strong> Quartas-feiras</p>
+                        <p><strong>Alta sazonal:</strong> Após feriados</p>
+                    </div>
+                    <div class="tendencia-box">
+                        <p><strong>Descartes por horário:</strong> 18h às 20h</p>
+                        <p><strong>Crescimento mensal:</strong> +12%</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DADOS FINANCEIROS ADICIONAIS -->
+            <section class="financeiro-section">
+                <h2>Indicadores Econômicos</h2>
+                <div class="financeiro-data">
+                    <div class="financeiro-box">
+                        <p><strong>Lucro por tipo:</strong></p>
+                        <ul>
+                            <li>Plástico: R$ 3.200,00</li>
+                            <li>Papel: R$ 2.750,00</li>
+                            <li>Vidro: R$ 1.900,00</li>
+                        </ul>
+                    </div>
+                    <div class="financeiro-box">
+                        <p><strong>Custo médio por rota:</strong> R$ 420,00</p>
+                        <p><strong>Margem de lucro total:</strong> 58%</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+        <h2 style="text-align:center">Mapa de Calor de Pontos de Coleta - Vitória/ES</h2>
+        <div id="map"></div>
 
-    <section class="form-section">
-        <form>
-            <label for="nome-evento">Nome do evento</label>
-            <input type="text" id="nome-evento" name="nome-evento">
-
-            <label for="local-evento">Localização do Evento</label>
-            <input type="text" id="local-evento" name="local-evento">
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <footer class="rodape">
+            <p>Fortes © 2025 – Todos os direitos reservados</p>
+        </footer>
+    </main>
 </body>
-</html>
 
-  
+</html>
