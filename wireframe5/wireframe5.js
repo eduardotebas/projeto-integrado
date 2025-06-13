@@ -5,3 +5,7 @@ function redirecionar() {
 function registrar() {
     
 }
+
+function voltar() {
+    window.location.href = "../wireframe1/wireframe1.html"
+}

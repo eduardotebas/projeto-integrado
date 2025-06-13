@@ -24,3 +24,7 @@ function enviar() {
 function redirecionar() {
     window.location.href = "../teladelogin/teladelogin.html"
 }
+
+function voltar() {
+    window.location.href = "../wireframe1/wireframe1.html"
+}

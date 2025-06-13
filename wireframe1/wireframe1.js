@@ -59,3 +59,7 @@ function formulario() {
     }
   })
 };
+
+function registre() {
+    window.location.href = "../wireframe5/wireframe5.html"
+}
