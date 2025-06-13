@@ -36,7 +36,7 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     color: #fff;
     background-color: #1d7508;
     transform: translateY(-5px);
@@ -148,7 +148,7 @@ button:active {
     justify-content: center;
     align-items: center;
     margin: 40px 10%;
-   color: black;
+    color: black;
     padding: 20px;
     border-radius: 12px;
 }
@@ -219,4 +219,93 @@ input[type="text"]::placeholder {
     padding: 20px;
     background-color: rgba(20, 20, 20, 0.9);
     font-size: 14px;
+}
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .menu-central {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .acoes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pesquisa {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .login-btn {
+        width: 80%;
+    }
+
+    .containerPai2 {
+        margin: 20px 10%;
+        width: auto;
+    }
+
+    .Detalhes {
+        width: 90%;
+    }
+
+    .estatisticas {
+        margin: 20px 5%;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-name h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-central {
+        font-size: 14px;
+    }
+
+    .containerPai {
+        margin: 20px 5%;
+        text-align: center;
+    }
+
+    .filho1 h2 {
+        font-size: 20px;
+    }
+
+    .containerPai2 {
+        margin: 20px 5%;
+        padding: 16px;
+    }
+
+    .Detalhes h3 {
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }

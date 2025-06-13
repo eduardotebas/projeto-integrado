@@ -287,3 +287,90 @@ input:focus {
     color: #333;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 1024px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .menu-central {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .acoes {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .pesquisa {
+        width: 100%;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+
+    .login-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .missao {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .cards-funcionalidades {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* PARA TELAS AINDA MENORES */
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 10px;
+    }
+
+    .logo h3 {
+        font-size: 20px;
+    }
+
+    .menu-central a {
+        font-size: 16px;
+    }
+
+    .missao h2 {
+        font-size: 24px;
+    }
+
+    .missao p {
+        font-size: 16px;
+    }
+
+    .barra-lateral {
+        display: none !important;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .conteudo {
+        padding: 20px 10px;
+    }
+
+    .rodape {
+        font-size: 14px;
+    }
+}

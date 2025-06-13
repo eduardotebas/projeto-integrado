@@ -10,8 +10,8 @@
   }
 
   main {
-    border-radius: 16px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+      border-radius: 16px;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
   }
 
   .cabecalho {
@@ -284,4 +284,214 @@
       color: #333;
       box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
       margin-top: 40px;
+  }
+
+  @media (max-width: 480px) {
+      .cabecalho {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          padding: 16px;
+      }
+
+      .menu-central {
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+      }
+
+      .acoes {
+          flex-direction: column;
+          width: 100%;
+          align-items: stretch;
+          gap: 10px;
+      }
+
+      .pesquisa {
+          width: 100%;
+          justify-content: space-between;
+      }
+
+      .login-btn {
+          width: 100%;
+      }
+
+      h1 {
+          font-size: 1.5rem;
+      }
+
+      section h2 {
+          font-size: 1.2rem;
+      }
+
+      .itens-container,
+      .noticias-grid,
+      .feedback-container,
+      .historias-container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .item,
+      .noticia,
+      .feedback-item,
+      .historia {
+          width: 100%;
+      }
+
+      .destaque {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .destaque img {
+          width: 100%;
+          max-width: 300px;
+      }
+
+      .rodape {
+          font-size: 0.9rem;
+      }
+  }
+
+  /* Celulares grandes e tablets pequenos: 481px a 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+      .cabecalho {
+          flex-direction: column;
+          gap: 12px;
+          padding: 20px;
+      }
+
+      .menu-central {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+      }
+
+      .acoes {
+          flex-direction: column;
+          align-items: stretch;
+          width: 100%;
+          gap: 10px;
+      }
+
+      .pesquisa {
+          width: 100%;
+      }
+
+      .login-btn {
+          width: 100%;
+      }
+
+      h1 {
+          font-size: 2rem;
+      }
+
+      .item,
+      .noticia,
+      .feedback-item,
+      .historia {
+          width: 90%;
+          max-width: 320px;
+      }
+
+      .destaque {
+          flex-direction: column;
+          text-align: center;
+      }
+  }
+
+  /* Tablets médios e notebooks: 768px a 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+      .cabecalho {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 40px;
+      }
+
+      .menu-central {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 16px;
+          justify-content: center;
+      }
+
+      .acoes {
+          flex-direction: row;
+          gap: 16px;
+          align-items: center;
+      }
+
+      .item,
+      .noticia,
+      .feedback-item,
+      .historia {
+          flex: 1 1 45%;
+          max-width: 45%;
+      }
+
+      .destaque {
+          flex-direction: row;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .destaque img {
+          width: 50%;
+      }
+
+      h1 {
+          font-size: 2.2rem;
+      }
+
+      section h2 {
+          font-size: 1.5rem;
+      }
+  }
+
+  /* Desktops grandes: acima de 1024px */
+  @media (min-width: 1025px) {
+      .cabecalho {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 60px;
+      }
+
+      .menu-central {
+          flex-direction: row;
+          gap: 24px;
+      }
+
+      .acoes {
+          flex-direction: row;
+          gap: 16px;
+      }
+
+      .item,
+      .noticia,
+      .feedback-item,
+      .historia {
+          flex: 1 1 250px;
+          max-width: 300px;
+      }
+
+      .destaque {
+          flex-direction: row;
+      }
+
+      .destaque img {
+          width: 300px;
+      }
+
+      h1 {
+          font-size: 2.5rem;
+      }
+
+      section h2 {
+          font-size: 1.8rem;
+      }
   }

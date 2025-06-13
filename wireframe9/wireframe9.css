@@ -15,22 +15,27 @@ h1 {
 h2 {
     font-size: 35px;
 }
+
 h3 {
     font-size: 31px;
 }
+
 h4 {
     font-size: 28px;
 }
+
 h5 {
     font-size: 19px;
 }
+
 h6 {
     font-size: 12px;
 }
 
-.preenchimento{
-   width: 100%;
+.preenchimento {
+    width: 100%;
 }
+
 section {
     background-image: url(imagens/lighter_blurred_image.jpeg);
     background-repeat: no-repeat;
@@ -257,4 +262,118 @@ label {
     flex: 1;
     padding: 20px;
     text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .menu-central,
+    .acoes {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .pesquisa {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .paidospontoscoleta {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .sugestoes {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .map-frame {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Tablets pequenos: 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .menu-central,
+    .acoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .sugestoes {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .paidospontoscoleta {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .map-frame {
+        width: 100%;
+    }
+}
+
+/* Tablets médios e notebooks: 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .menu-central {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .acoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .paidospontoscoleta {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .sugestoes {
+        width: 45%;
+    }
 }

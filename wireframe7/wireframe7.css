@@ -292,3 +292,42 @@ button:active {
     padding: 20px;
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 10px 20px;
+    }
+
+    .logo h3 {
+        font-size: 20px;
+    }
+
+    .menu-central a {
+        font-size: 16px;
+    }
+
+    .pesquisa input {
+        width: 100px;
+    }
+
+    .paisecoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #map {
+        width: 90%;
+        height: 300px;
+    }
+
+    .welcome-text h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
