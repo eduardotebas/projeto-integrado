@@ -27,6 +27,31 @@ main {
     padding-bottom: 20px;
 }
 
+
+button {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color:#1d7508 ;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color:#1d35ea;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-between;

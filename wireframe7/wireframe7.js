@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         maxZoom: 17,
     }).addTo(map)
 });
+
+function voltar() {
+    window.location.href = "../wireframe9/wireframe9.html"
+}
