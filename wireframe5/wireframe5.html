@@ -52,12 +52,12 @@
             <div class="Detalhes">
                 <label>
                     <h3>📍 Localização do reciclado(Ponto de Coleta)</h3>
-                    <input type="text" placeholder="Digite a localização" />
+                    <input type="text" id="localizacao" placeholder="Digite a localização" />
                 </label>
 
                 <label>
                     <h3>🧮 Quantidade de resíduos</h3>
-                    <input type="text" placeholder="Ex: 5 kg" />
+                    <input type="text" id="quantidade" placeholder="Ex: 5 kg" />
                 </label>
 
                 <div class="checkboxes">
@@ -70,7 +70,7 @@
                      <label><input type="checkbox" name="material" value="oleo">Óleo</label>
                 </div>
                 <br>
-                <button>Registrar Coleta</button>
+                <button onclick="registrar()" id="registrar">Registrar Coleta</button>
             </div>
         </div>
 

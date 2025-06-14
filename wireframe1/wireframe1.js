@@ -17,7 +17,6 @@ document.getElementById("coletar-btn").addEventListener("click", function (e) {
     materiais.forEach((material) => {
         const icon = material.querySelector(".material-icon");
 
-        // Evita esconder novamente ou duplicar mensagens
         if (icon && icon.style.display !== "none") {
             icon.style.display = "none";
 
@@ -29,7 +28,6 @@ document.getElementById("coletar-btn").addEventListener("click", function (e) {
         }
     });
 
-    // Adiciona a mensagem de endereço apenas se ainda não estiver presente
     if (!enderecoMsg.hasChildNodes()) {
         const endereco = document.createElement("p");
         endereco.textContent = "Itens reservados no ponto de coleta: RUA ABC, 123";
@@ -46,7 +44,7 @@ function formulario() {
   document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault(); 
 
-    // Verifica se a mensagem já foi exibida
+
     if (!document.getElementById("mensagem-confirmacao")) {
       const mensagem = document.createElement("p");
       mensagem.id = "mensagem-confirmacao";
